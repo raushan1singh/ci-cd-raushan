@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="main" onclick="addField()">Add +</button>
+    <div class="main"></div>
+    
+    <script>
+        const addField = () =>{
+            const main = document.querySelector('.main');
+
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = "list";
+
+            main.appendChild(input);
+        };
+    </script>
+</body>
+</html>
